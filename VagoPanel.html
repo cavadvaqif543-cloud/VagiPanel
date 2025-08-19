@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>VagoPanel</title>
+<style>
+body { 
+    font-family: Arial; 
+    background: linear-gradient(-45deg, #4facfe, #00f2fe, #ff7eb9, #ff758c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center; 
+    padding: 50px; 
+    color: white;
+}
+@keyframes gradientBG {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.paket { 
+    background: rgba(0,0,0,0.6); 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 15px; 
+    display: inline-block; 
+    width: 250px; 
+    color: white;
+    transition: transform 0.3s, background 0.3s;
+}
+.paket:hover {
+    transform: scale(1.05);
+    background: rgba(0,0,0,0.8);
+}
+button { 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    border: none; 
+    background: #28a745; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+button:hover { background: #218838; }
+#scrollTop {position: fixed; bottom: 80px; right: 20px; display: none; background: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; font-size: 18px;}
+</style>
+</head>
+<body>
+
+<h1>VagoPanel</h1>
+<p>20 bəyəni qazandınız! WhatsApp-a yazın ✅</p>
+
+<!-- Takipçi Paketləri -->
+<div class="paket">
+    <h2>200 Takipçi + 100 Bonus</h2>
+    <p>Qiymət: 4 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>1000 Takipçi</h2>
+    <p>Qiymət: 9 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<!-- Like Paketləri -->
+<div class="paket">
+    <h2>50 Like</h2>
+    <p>Qiymət: 1 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>100 Like</h2>
+    <p>Qiymət: 4 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>150 Like</h2>
+    <p>Qiymət: 6 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>200 Like</h2>
+    <p>Qiymət: 8 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>250 Like</h2>
+    <p>Qiymət: 10 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>300 Like</h2>
+    <p>Qiymət: 15 AZN (Endirim)</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>350 Like</h2>
+    <p>Qiymət: 17 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<div class="paket">
+    <h2>400 Like</h2>
+    <p>Qiymət: 18 AZN</p>
+    <a href="https://wa.me/994512778651" target="_blank"><button type="button">Al</button></a>
+</div>
+
+<!-- Scroll to Top -->
+<button id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/994512778651" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:60px; height:60px;">
+</a>
+
+<script>
+// Scroll to top düyməsini göstər/gizlət
+window.onscroll = function() {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        document.getElementById('scrollTop').style.display = "block";
+    } else {
+        document.getElementById('scrollTop').style.display = "none";
+    }
+};
+</script>
+
+</body>
+</html>
